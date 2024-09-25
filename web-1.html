@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./web-1.css" type="text/css"> 
+    <!-- <link rel="stylesheet" href="./web-1.2.css" type="text/css"> -->
+    <!-- JS -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="./fontawesome-free/css/all.css">
+    <title>Hotel Review</title>
+</head>
+<body>
+    <div class="headBar">
+        <h1 class="Name">Hotel Review</h1>
+
+        <ul class="navBar">
+            <li class="navChoice"><a href="#">Home</a></li>
+            <li class="navChoice"><a href="#">Comment</a></li>
+            <li class="navChoice"><a href="#">Hotel list</a></li>
+            <li class="navChoice"><a href="#">About Us</a></li>
+            <li class="navChoice"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="secondSec">
+        <div class="bgContainer">
+            <div class="secondSec_div" id="sd1"></div>
+            <div class="secondSec_div" id="sd2"></div>
+            <div class="secondSec_div" id="sd3"></div>
+            <div class="secondSec_div" id="sd4"></div>
+        </div>
+        
+        <div class="hoverSections">
+            <a href="#sd1" id="a1" class="2ndA" onmouseover="click()"><p>View</p></a>
+            <a href="#sd2" id="a2" class="2ndA" onmouseover="click()"><p>Restaurant</p></a>
+            <a href="#sd3" id="a3" class="2ndA" onmouseover="click()"><p>Service Quality</p></a>
+            <a href="#sd4" id="a4" class="2ndA" onmouseover="click()"><p>Facility</p></a>
+        </div>
+    </div>
+
+    <div class="firstSec">
+        <div class="scrollSec">
+            <div class="scroll">
+                <img id="img1" src="./media_file/Hotel1.1.jpg" alt="Hotel1.1" loading="lazy">
+                <img id="img2" src="./media_file/Hotel1.2.jpg" alt="Hotel1.2" loading="lazy">
+                <img id="img3" src="./media_file/Hotel1.3.jpg" alt="Hotel1.3" loading="lazy">
+            </div>
+            <div class="imgNav">
+                <a href="#img1"></a>
+                <a href="#img2"></a>
+                <a href="#img3"></a>
+            </div>
+        </div>
+
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptates aspernatur voluptatum aperiam placeat, non temporibus fuga unde ex maiores deleniti veniam atque porro laborum magni iste accusamus corrupti facere distinctio excepturi praesentium iusto nisi laudantium nesciunt! Itaque, perspiciatis dolorem.</p>
+            
+            <button id="link1">Click here to see more Comment <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        
+    </div>
+    
+    <script defer ="./srcweb-1.js"></script>
+</body>
+</html>

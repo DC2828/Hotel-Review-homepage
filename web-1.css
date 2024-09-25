@@ -1,0 +1,244 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Anton', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    --color1: #000000;
+    --color2:#fb5607;
+    --color3:#ff006e;
+    --color4: #8338ec;
+    --color5: #3a86ff;
+}
+
+body{
+    width: 100%;
+    height: 200vh;
+    min-width: 70%;
+    min-height: 40%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.headBar{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background:var(--color1);
+    padding: 30px;
+    color:white;
+    display: flex;
+    z-index: 1000;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headBar .Name{
+    white-space: nowrap;
+}
+
+.headBar a{
+    color: white;
+}
+
+.headBar .navBar{
+    height: 30px;
+    margin: 30px;
+    white-space: nowrap;
+}
+
+.headBar .navBar .navChoice{
+    display:inline-block;
+    font-size: 25px;
+    margin-right: 20px;
+    color: white;
+    /* border-bottom: transparent 2px solid;
+    transition: all 0.2s linear; */
+}
+
+.headBar .navBar .navChoice a{
+    border-bottom: transparent 2px solid;
+    transition: all 0.2s linear; 
+}
+
+
+
+.headBar .navBar .navChoice a:hover{
+    border-bottom: white 2px solid;
+}
+
+.firstSec{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right,var(--color2)30%,var(--color4));
+    display: grid;
+    grid-template-columns: repeat(2,50vw);
+    padding: 10rem 2rem;
+}
+
+.firstSec .scrollSec{
+    max-width: 50rem;
+    max-height: 28.1rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.firstSec .scrollSec .scroll{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.firstSec .scrollSec .scroll::-webkit-scrollbar{
+    width: 0px;
+}
+
+.firstSec .scrollSec .scroll img{
+    flex:1 0 100%;/*(same image size,not wrap,init size 100%)*/
+    scroll-snap-align: start;
+    object-fit: cover;/*fill the parent container with 1 img*/
+}
+
+.firstSec .scrollSec .imgNav{
+    display: flex;
+    column-gap: 1rem;
+    position:absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.firstSec .scrollSec .imgNav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 0.2s;
+}
+
+.firstSec .scrollSec .imgNav a:hover{
+    opacity: 1;
+}
+
+
+
+.firstSec .text{
+    width: 30rem;
+    height: 28.1rem;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    color: white;
+    margin-left: 10%;
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.2s linear;
+}
+
+.firstSec .text #link1{
+    border: none;
+    padding: 10px;
+    margin: 5%;
+    border-radius: 20px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.firstSec .text #link1:hover{
+    background:var(--color4);
+    transform: translateX(10px);
+}
+
+.secondSec{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right,var(--color2)30%,var(--color4));
+}
+
+.secondSec .bgContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    aspect-ratio: 16/9;
+}
+
+.secondSec .bgContainer .secondSec_div{
+    width: 100vw;
+    height: 100vh;
+    flex:1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.secondSec .bgContainer::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.secondSec .bgContainer #sd1{
+    background-image: url("./media_file/Hotel2.1.jpg") ;
+}
+.secondSec .bgContainer #sd2{
+    background-image: url("./media_file/Hotel2.2.jpg") ;
+}
+.secondSec .bgContainer #sd3{
+    background-image: url("./media_file/Hotel2.3.jpg") ;
+}
+.secondSec .bgContainer #sd4{
+    background-image: url("./media_file/Hotel2.4.jpg") ;
+}
+
+.secondSec .hoverSections{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.secondSec .hoverSections a{
+    width: 25vw;
+    height: 100vh;
+    background: transparent;
+    position: relative;
+    border: 2px solid #000000;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    text-shadow: 2px 2px 2px #000000;
+    transition: all 0.2s linear;
+}
+
+.secondSec .hoverSections a:hover{
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.secondSec .hoverSections a p{
+    position: absolute;
+    left: 0;
+    bottom: 10rem;
+}
+
+
+
+
+
+
